@@ -17,12 +17,12 @@ struct ContentView: View {
             Text("\(calcViewModel.number)")
                 .padding()
             Button("＋1"){
-                calcViewModel.fetchAddtionResult()
+                calcViewModel.addition()
                 print("calcViewModel.number:",calcViewModel.number)
             }
             .padding()
             Button("-1"){
-                calcViewModel.fetchSubtractionResult()
+                calcViewModel.subtraction()
                 print("calcViewModel.number:",calcViewModel.number)
             }
         }

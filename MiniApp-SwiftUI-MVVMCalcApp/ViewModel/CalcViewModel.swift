@@ -17,12 +17,12 @@ class CalcViewModel: ObservableObject {
         self.number = calculator.number
     }
 
-    func fetchAddtionResult() {
+    func addition() {
         calculator.addition()
         number = calculator.number
     }
 
-    func fetchSubtractionResult() {
+    func subtraction() {
         calculator.subtraction()
         number = calculator.number
     }
