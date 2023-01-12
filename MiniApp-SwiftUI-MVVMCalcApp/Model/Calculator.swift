@@ -7,15 +7,16 @@
 
 import Foundation
 
+// MARK: - Model
 class Calculator {
-
     public var number: Int = 0
 
     func addition() {
         self.number = self.number + 1
     }
 
-    func subtraction(){
+    func subtraction() {
         self.number = self.number - 1
     }
 }
+

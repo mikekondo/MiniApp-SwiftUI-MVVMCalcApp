@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 class CalcViewModel: ObservableObject {
+    // MARK: - Model connect
     @Published var calculator: Calculator // 使用するモデルを指定
     @Published var number: Int // モデルから受け取るプロパティを指定
 

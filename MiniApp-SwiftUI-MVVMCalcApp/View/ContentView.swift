@@ -9,19 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
 
-    // 使用するViewModelを指定
+    // MARK: - ViewModel connect
     @ObservedObject public var calcViewModel = CalcViewModel(calculator: Calculator())
 
+    // MARK: - View
     var body: some View {
-        VStack{
+        VStack {
             Text("\(calcViewModel.number)")
                 .padding()
-            Button("＋1"){
+            Button("＋1") {
                 calcViewModel.addition()
                 print("calcViewModel.number:",calcViewModel.number)
             }
             .padding()
-            Button("-1"){
+            Button("-1") {
                 calcViewModel.subtraction()
                 print("calcViewModel.number:",calcViewModel.number)
             }
